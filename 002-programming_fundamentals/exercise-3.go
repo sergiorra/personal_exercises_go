@@ -5,10 +5,11 @@ import (
 )
 
 const (
-	a = 42 // untyped constant
-	b int = 43 // typed constant
+	a = 42
+	b int = 43
 )
 
 func main() {
+	// typed and untyped constants
 	fmt.Println(a, b)
 }

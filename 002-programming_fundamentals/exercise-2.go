@@ -5,6 +5,7 @@ import (
 )
 
 func main() {
+	// writing expressions
 	a := (42 == 42)
 	b := (42 <= 43)
 	c := (42 >= 43)

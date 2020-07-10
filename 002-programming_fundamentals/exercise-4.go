@@ -5,6 +5,7 @@ import (
 )
 
 func main() {
+	// shifting a number
 	a := 42
 	fmt.Printf("%d\t%b\t%#x\n", a, a, a)
 	b := a << 1
