@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	// add value to map
+	// add item to map
 	m := map[string][]string{
 		`bond_james`:      []string{`Shaken, not stirred`, `Martinis`, `Women`},
 		`moneypenny_miss`: []string{`James Bond`, `Literature`, `Computer Science`},

@@ -12,8 +12,6 @@ func main() {
 		`no_dr`:           []string{`Being evil`, `Ice cream`, `Sunsets`},
 	}
 
-	// fmt.Println(m)
-
 	m[`fleming_ian`] = []string{`steaks`, `cigars`, `espionage`}
 
 	delete(m, `no_dr`)
