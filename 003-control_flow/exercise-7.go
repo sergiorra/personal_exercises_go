@@ -5,6 +5,7 @@ import (
 )
 
 func main() {
+	// switch without expression
 	switch {
 	case false:
 		fmt.Println("should not print")

@@ -5,6 +5,7 @@ import (
 )
 
 func main() {
+	// for without condition
 	bd := 1985
 	for {
 		if bd > 2017 {

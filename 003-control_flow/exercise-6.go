@@ -5,6 +5,7 @@ import (
 )
 
 func main() {
+	// conditionals
 	x := "Moneypenny"
 
 	if x == "Moneypenny" {
