@@ -20,6 +20,7 @@ type sedan struct {
 }
 
 func main() {
+	// embedded struct
 	t := truck{
 		vehicle: vehicle{
 			doors: 2,
