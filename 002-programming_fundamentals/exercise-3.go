@@ -5,7 +5,7 @@ import (
 )
 
 const (
-	a = 42
+	a     = 42
 	b int = 43
 )
 

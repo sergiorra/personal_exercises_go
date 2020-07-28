@@ -7,9 +7,9 @@ import (
 func main() {
 	// switch without expression
 	switch {
-		case false:
-			fmt.Println("should not print")
-		case true:
-			fmt.Println("should print")
+	case false:
+		fmt.Println("should not print")
+	case true:
+		fmt.Println("should print")
 	}
 }
