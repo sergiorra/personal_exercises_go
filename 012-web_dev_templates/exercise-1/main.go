@@ -27,6 +27,7 @@ func init() {
 }
 
 func main() {
+	// showing data in a template
 	years := []year{
 		year{
 			AcaYear: "2020-2021",
