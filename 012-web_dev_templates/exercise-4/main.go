@@ -16,6 +16,7 @@ type Record struct {
 }
 
 func main() {
+	// server processing csv data and showing it in a template
 	http.HandleFunc("/", foo)
 	http.ListenAndServe(":8080", nil)
 }
