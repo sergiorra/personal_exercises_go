@@ -12,7 +12,7 @@ var db *sql.DB
 var err error
 
 func main() {
-	// Connecting to mysql server with fake credentials
+	// Connecting to mysql server on AWS with fake credentials
 	db, err = sql.Open("mysql", "awsuser:mypassword@tcp(mydbinstance.cakwl95bxza0.us-west-1.rds.amazonaws.com:3306)/test02?charset=utf8")
 	check(err)
 	defer db.Close()
