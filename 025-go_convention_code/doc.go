@@ -1,2 +1,2 @@
-// This is a package for the storage of users
+// This is a package for the repository of users
 package architecture
