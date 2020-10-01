@@ -2,9 +2,12 @@ package beers
 
 import (
 	"fmt"
+	"log"
 	"strconv"
 
-	models "github.com/sergiorra/personal_exercises_go/029-cli/exercise-4/models"
+	"github.com/sergiorra/personal_exercises_go/029-cli/exercise-5/errors"
+
+	models "github.com/sergiorra/personal_exercises_go/029-cli/exercise-5/models"
 	"github.com/spf13/cobra"
 )
 
@@ -28,7 +31,10 @@ func InitBeersCmd(repository models.BeerRepo) *cobra.Command {
 
 func runBeersFn(repository models.BeerRepo) CobraFn {
 	return func(cmd *cobra.Command, args []string) {
-		beers, _ := repository.GetBeers()
+		beers, err := repository.GetBeers()
+		if errors.IsDataUnreacheable(err) {
+			log.Fatal(err)
+		}
 
 		id, _ := cmd.Flags().GetString(idFlag)
 
